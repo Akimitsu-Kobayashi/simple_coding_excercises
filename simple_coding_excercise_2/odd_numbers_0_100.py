@@ -6,7 +6,7 @@ while number < 101:
     # differentiate odd numbers
     if number % 2 != 0:
         #print number
-        print(i)
+        print(number)
     number += 1
 
 
