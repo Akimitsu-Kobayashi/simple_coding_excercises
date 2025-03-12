@@ -2,10 +2,11 @@
 
 #loop until 100
 i = 0
-while i <= 100:
+while i < 101:
     # differentiate odd numbers
     if i % 2 != 0:
         #print number
         print(i)
+    i += 1
 
 
