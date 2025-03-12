@@ -9,11 +9,11 @@ while True:
         #asks user for a number
         num = int(input("Enter a number: "))
         inputs.append(num)
-        
+
         #finds then minimum value in the list
         lowest_num = min(inputs)
 
-        print(lowest_num)
+        print("lowest number is "+ str(lowest_num))
 
     except ValueError:
         #error when the input is wrong
