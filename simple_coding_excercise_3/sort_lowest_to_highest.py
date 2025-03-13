@@ -10,7 +10,7 @@ while True:
         num = int(input("Enter a number: "))
         inputs.append(num)
 
-        #finds then minimum value in the list
+        #sorts the list
         sorted_inputs = sorted(inputs)
 
         print(sorted_inputs)
