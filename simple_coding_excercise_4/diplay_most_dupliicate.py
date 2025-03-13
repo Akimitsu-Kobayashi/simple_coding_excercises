@@ -3,26 +3,33 @@
 inputs = []
 all_nums = []
 duplicates = []
+most_duplicate = 0
+
 
 while True:
     num = int(input("Enter a number: "))
+    most_duplicate = num
 
-    for i in range(len(inputs)):
-        if num in inputs[i]:
-            inputs[i].append(num)
+    for numbers in range(len(inputs)):
+        if num in inputs[numbers]:
+            inputs[numbers].append(num)
+
+        if len(inputs[numbers])>most_duplicate:
+             most_duplicate = inputs[numbers][0]
     
     if num not in all_nums:
             inputs.append([num])
 
+    all_nums.append(num)
+    
     if num not in duplicates and num in all_nums:
         duplicates.append(num)
 
-    all_nums.append(num)
 
 
 
-    
     print(inputs)
     print(all_nums)
     print(duplicates)
+    print(most_duplicate)
 
